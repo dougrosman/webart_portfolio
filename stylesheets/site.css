@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Lekton:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,300;1,300&display=swap');
+
+:root {
+    /* Color Schemes */
+    --clr-primary: hsl(249, 28%, 15%);
+    --clr-secondary: hsl(40, 79%, 96%);
+    --clr-accent: hsl(347, 78%, 54%);
+    --clr-hover: hsl(347, 78%, 80%);
+
+    /* Font Families */
+    --font-header-primary: 'Raleway', sans-serif;
+    --font-accent: 'Lekton', sans-serif;
+    --font-body: 'Hind', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-seconday);
+    color: var(--clr-fonts);
+    font-family: var(--font-body);
+}
+
+header, footer {
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
+    color: #fdfdfd;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header-primary);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+main {
+    max-width: 72ch;
+    margin: 1rem auto;
+    flex-grow: 1;
+}
+
+p {
+    line-height: 1.25;
+    margin: 1rem 0;
+}
+
+a {
+    color: var(--clr-accent);
+}
+
+nav a {
+    font-family: var(--font-accent);
+}
+
+a:hover {
+    color: var(--clr-hover);
+}
